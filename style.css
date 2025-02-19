@@ -5,6 +5,7 @@
 }
 
 
+
 html {
 	background-image: url("img/stone_tile.jpg");
 	background-size: 5%;
@@ -18,7 +19,8 @@ nav ul {
 	text-decoration: none;
 	list-style: none;
 	justify-content: right;
-	padding: 1em;
+	/* padding: 1em; */
+	padding: 14px 16px;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -37,14 +39,46 @@ nav a:hover, nav a:active {
 	color: black;
 }
 
-/* Body */
-body {}
+div {
+	justify-content: center;
+	padding: 1em;
+}
 
-div {}
+.sub-div {
+	display: flex;
+	background-color: slategray;
+}
 
-article figure {
-	size: 25%;
-	margin: 0 0 1.25em 1.25em;
+article{
+	padding: 2em;
+}
+
+article figure img {
+	float: left;
+	max-width: 30%;
+	height: auto;
+	/* display: block; */
+	margin: 0 auto;
+	 size: 25%;
 }
 
 /*Footer */
+footer {
+	background-color: slategray;
+	color: white;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 0;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+	article figure img {
+		float: none;
+		max-width: 100%;
+		height: auto;
+	}
+}
