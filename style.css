@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+
+html {
+	background-image: url("img/stone_tile.jpg");
+	background-size: 5%;
+}
+
+/*Header */
+header {
+}
+
+nav ul {
+	text-decoration: none;
+	list-style: none;
+	justify-content: right;
+	padding: 1em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex;
+	margin: auto;
+	overflow: hidden;
+	background-color: slategray;
+}
+
+nav a:link, nav a:visited {
+	color: rgb(51, 56, 51);
+	text-decoration: underline;
+}
+
+nav a:hover, nav a:active {
+	color: black;
+}
+
+/* Body */
+body {}
+
+div {}
+
+article figure {
+	size: 25%;
+	margin: 0 0 1.25em 1.25em;
+}
+
+/*Footer */
