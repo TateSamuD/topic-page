@@ -1,81 +1,171 @@
-@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
 	font-family: 'Poppins', sans-serif;
 }
 
-
-
 html {
 	background-image: url("img/stone_tile.jpg");
-	background-size: 5%;
+	background-size: 5rem;
+}
+
+body {
+	margin: 0;
+	padding: 0;
 }
 
 /*Header */
 header {
+	margin: 0;
+	left: 0;
+}
+
+nav {
+	/* padding: 12px ; */
+	background-color: slategray;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	overflow: hidden;
 }
 
 nav ul {
 	text-decoration: none;
-	list-style: none;
+	list-style-type: none;
 	justify-content: right;
-	/* padding: 1em; */
-	padding: 14px 16px;
-	position: fixed;
-	top: 0;
-	width: 100%;
 	display: flex;
-	margin: auto;
-	overflow: hidden;
-	background-color: slategray;
+	margin: 0;
 }
 
-nav a:link, nav a:visited {
-	color: rgb(51, 56, 51);
+li {
+	border-left: 1px solid #bbb;
+}
+li:first-child {
+	border-left: none;
+ }
+
+nav a {
+	float: right;
+	padding: 14px 16px;
+	text-decoration: none;
+	background-color: rgb(58, 67, 75);
+}
+
+nav a:link,
+nav a:visited {
+	color: rgb(192, 180, 159);
+	text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+	color: black;
 	text-decoration: underline;
 }
 
-nav a:hover, nav a:active {
-	color: black;
+nav a.active {
+	color: rgb(255, 245, 227);
+	text-decoration: underline;
+}
+
+
+article {
+	width: 75%;
+	max-width: 100%;
+	padding: 2em;
+	font-size: 115%;
+	font-weight: 500;
+	line-height: 1.6;
+	margin: auto;
+}
+
+article figure {
+	float: left;
+	width: 40%;
+	max-width: auto;
+	max-height: auto;
+	margin: 1em 1em 1em 0;
+}
+
+article figcaption {
+	font-size: 0.6em;
+	text-align: center;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: lighter;
+}
+
+article p {
+	margin: 0;
+	padding: 1;
 }
 
 div {
 	justify-content: center;
+	display: block;
 	padding: 1em;
 }
 
-.sub-div {
+.container {
 	display: flex;
-	background-color: slategray;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: transparent;
 }
 
-article{
-	padding: 2em;
+.top-div {
+	display: block;
+	width: 100%;
+	background-color: rgb(112, 128, 144, 0.95);
+	padding: 1em;
+	margin-bottom: 2em;
 }
 
-article figure img {
+.top-header {
+	text-align: center;
+}
+
+.sub-header {
+	text-align: center;
+	margin: 2.5% 0;
+	font-family: 'Libre Baskerville', serif;
+}
+
+.sub-div {
+	display: block;
+	background-color: rgb(112, 128, 144, 0.95);
+	margin-bottom: 1rem;
+}
+
+.body-div{
+	display: block;
+	padding: 0;
+}
+
+.fig-body img {
 	float: left;
-	max-width: 30%;
-	height: auto;
-	/* display: block; */
-	margin: 0 auto;
-	 size: 25%;
+	display: block;
+	width: 100%;
 }
+
 
 /*Footer */
 footer {
 	background-color: slategray;
 	color: white;
-	margin: auto;
-	text-align: center;
-	padding-bottom: 0;
-	bottom: 0;
+	display: block;
+	clear: both;
 	width: 100%;
-	height: auto;
+	text-align: center;
+	padding: 0.5em 0;
 }
 
 /* Small screens */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+
+
 	article figure img {
 		float: none;
 		max-width: 100%;
