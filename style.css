@@ -165,6 +165,29 @@ footer {
 /* Small screens */
 @media only screen and (max-width: 768px) {
 
+	body{
+		font-size: small;
+	}
+
+	article figure img {
+		float: none;
+		max-width: 75%;
+		height: auto;
+	}
+}
+
+/* Mobile S screens */
+@media only screen and (max-width: 480px) {
+
+	body{
+		font-size: x-small;
+	}
+
+	article{
+		width: auto;
+		padding: 15px;
+		margin: 20px;
+	}
 
 	article figure img {
 		float: none;
